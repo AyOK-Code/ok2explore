@@ -1,0 +1,297 @@
+<html lang="en"><head><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-TS09DKNEVC&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" src="chrome-extension://bfogiafebfohielmmehodmfbbebbbpei/content_scripts/webauthn/webauthn.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OK2Explore</title>
+
+    
+    
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/lib/jquery.msg/jquery.msg.css">
+        <link rel="stylesheet" href="/lib/footable/footable.bootstrap.min.css">
+        <link rel="stylesheet" href="/css/site.min.css?v=Z-Chnvm4ijQ6EqZvIPw2zMpdhdkH9Sm-JVdn8PWSGWA">
+        <link rel="stylesheet" href="/css/landing.css?v=4V0bus4PYTVOQfmyrumT3DGCwcuAya--Xa_voR-QYkU">
+        <link rel="stylesheet" href="/css/app.css?v=Y0W2wpdDwTXH-FmtlwKwcz3d-0yf5utaKgfLI4Fy65o">
+        <link rel="stylesheet" href="/css/Card.css">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/images/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="&nbsp;">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="~/images/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="~/images/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="~/images/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="~/images/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="~/images/mstile-310x310.png">
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace","Ajax"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+        }({
+            instrumentationKey: 'a65b1095-ead8-4d82-8359-f4278682e6e6'
+        });
+        
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+    </script><script src="//az416426.vo.msecnd.net/scripts/a/ai.0.js"></script>
+
+</head>
+<body class="vsc-initialized" cz-shortcut-listen="true">
+    <a class="skipLink" href="#mainContent">Skip Navigation</a>
+    <div id="header" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <div>
+                    <a href="/">
+                        <img id="img-header" src="/images/logo.png" alt="Ok 2 Explore" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="text-primary">Oklahoma State Vital Records Index</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="nav" class="row">
+        <span class="col-xs-6 col-sm-4 col-md-2"><a class="nav-item" href="/">Home</a></span>
+        <span class="col-xs-6 col-sm-4 col-md-2"><a class="nav-item" href="/Home/Contact">Contact</a></span>
+        <span class="col-xs-6 col-sm-4 col-md-2 dropdown" role="presentation">
+            <a class="dropdown-toggle nav-item" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                FAQ <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#" onclick="getBirthFAQ(); return false;">Birth</a></li>
+                <li><a href="#" onclick="getDeathFAQ(); return false;">Death</a></li>
+            </ul>
+        </span>
+        <span class="col-xs-6 col-sm-4 col-md-2 dropdown" role="presentation">
+            <a class="dropdown-toggle nav-item" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Eligibility <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#" onclick="openBirthEligibility(); return false;">Birth</a></li>
+                <li><a href="#" onclick="openDeathEligibility(); return false;">Death</a></li>
+            </ul>
+        </span>
+        <span class="col-xs-6 col-sm-4 col-md-2"><a class="nav-item" href="/App/BirthSearch">Search Birth Records</a></span>
+        <span class="col-xs-6 col-sm-4 col-md-2"><a class="nav-item" href="/App/DeathSearch">Search Death Records</a></span>
+    </div>
+
+    <div id="mainContent" class="container-fluid body-content">
+        
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/lib/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="/css/app.css?v=Y0W2wpdDwTXH-FmtlwKwcz3d-0yf5utaKgfLI4Fy65o">
+
+<div class="deathSearchWrapperOuter">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <div class="row">
+                <div class="col-md-8 deathSearchWrapper">
+                    <div class="card card-white">
+                        <div class="card-content">
+                            <form novalidate="" name="deathSearchForm">
+                                <fieldset>
+                                    <h3>Search Death Index</h3>
+                                    <div class="form-group">
+                                        <label for="FirstName" class="control-label">First Name:</label>
+                                        <input maxlength="30" type="text" class="form-control" id="FirstName" placeholder="first name" data-keeper-edited="yes">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="LastName" class="control-label">Last Name:</label>
+                                        <input value="" maxlength="30" type="text" class="form-control" id="LastName" placeholder="last name" data-keeper-edited="yes">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="MiddleName" class="control-label">Middle Name:</label>
+                                        <input type="text" class="form-control" id="MiddleName" placeholder="middle name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="DeathDate" class="control-label">Date of Death:</label>
+                                        <div class="input-group">
+                                            <input id="DeathMonth" maxlength="2" placeholder="month" class="form-control number-only" type="text" data-keeper-edited="yes">
+                                            <span class="input-group-addon">/</span>
+                                            <input id="DeathDay" maxlength="2" placeholder="day" class="form-control number-only" type="text" data-keeper-edited="yes">
+                                            <span class="input-group-addon">/</span>
+                                            <input id="DeathYear" maxlength="4" placeholder="year" class="form-control number-only" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Variance" class="control-label">Date Range:</label>
+                                        <select id="Variance" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                            <option selected="" value="">Death Year Variance...</option>
+                                            <option value="1">+/-1 year</option>
+                                            <option value="2">+/-2 years</option>
+                                            <option value="5">+/-5 years</option>
+                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Variance-container"><span class="select2-selection__rendered" id="select2-Variance-container" title="Death Year Variance...">Death Year Variance...</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>&nbsp;&nbsp;
+                                        <i aria-hidden="true" tabindex="0" class="fa fa-question fa-2x text-primary actionicon" data-toggle="popover" data-placement="right" data-title="Year Variance" data-content="Searching a range of years will not be limited by month and/or day." style="cursor:default;" data-original-title="" title=""></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Gender" class="control-label">Gender:</label>
+                                        <select id="Gender" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                            <option selected="" value="">Gender...</option>
+                                            <option value="M">Male</option>
+                                            <option value="F">Female</option>
+                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Gender-container"><span class="select2-selection__rendered" id="select2-Gender-container" title="Male">Male</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="DeathCounty" class="control-label">Death County:</label>
+                                        <select id="DeathCounty" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="">County of Death...</option><option value="Adair">Adair</option><option value="Alfalfa">Alfalfa</option><option value="Atoka">Atoka</option><option value="Beaver">Beaver</option><option value="Beckham">Beckham</option><option value="Blaine">Blaine</option><option value="Bryan">Bryan</option><option value="Caddo">Caddo</option><option value="Canadian">Canadian</option><option value="Carter">Carter</option><option value="Cherokee">Cherokee</option><option value="Choctaw">Choctaw</option><option value="Cimarron">Cimarron</option><option value="Cleveland">Cleveland</option><option value="Coal">Coal</option><option value="Comanche">Comanche</option><option value="Cotton">Cotton</option><option value="Craig">Craig</option><option value="Creek">Creek</option><option value="Custer">Custer</option><option value="Delaware">Delaware</option><option value="Dewey">Dewey</option><option value="Ellis">Ellis</option><option value="Garfield">Garfield</option><option value="Garvin">Garvin</option><option value="Grady">Grady</option><option value="Grant">Grant</option><option value="Greer">Greer</option><option value="Harmon">Harmon</option><option value="Harper">Harper</option><option value="Haskell">Haskell</option><option value="Hughes">Hughes</option><option value="Jackson">Jackson</option><option value="Jefferson">Jefferson</option><option value="Johnston">Johnston</option><option value="Kay">Kay</option><option value="Kingfisher">Kingfisher</option><option value="Kiowa">Kiowa</option><option value="Latimer">Latimer</option><option value="LeFlore">LeFlore</option><option value="Lincoln">Lincoln</option><option value="Logan">Logan</option><option value="Love">Love</option><option value="McClain">McClain</option><option value="McCurtain">McCurtain</option><option value="McIntosh">McIntosh</option><option value="Major">Major</option><option value="Marshall">Marshall</option><option value="Mayes">Mayes</option><option value="Murray">Murray</option><option value="Muskogee">Muskogee</option><option value="Noble">Noble</option><option value="Nowata">Nowata</option><option value="Okfuskee">Okfuskee</option><option value="Oklahoma">Oklahoma</option><option value="Okmulgee">Okmulgee</option><option value="Osage">Osage</option><option value="Ottawa">Ottawa</option><option value="Pawnee">Pawnee</option><option value="Payne">Payne</option><option value="Pittsburg">Pittsburg</option><option value="Pontotoc">Pontotoc</option><option value="Pottawatomie">Pottawatomie</option><option value="Pushmataha">Pushmataha</option><option value="RogerMills">RogerMills</option><option value="Rogers">Rogers</option><option value="Seminole">Seminole</option><option value="Sequoyah">Sequoyah</option><option value="Stephens">Stephens</option><option value="Texas">Texas</option><option value="Tillman">Tillman</option><option value="Tulsa">Tulsa</option><option value="Wagoner">Wagoner</option><option value="Washington">Washington</option><option value="Washita">Washita</option><option value="Woods">Woods</option><option value="Woodward">Woodward</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-DeathCounty-container"><span class="select2-selection__rendered" id="select2-DeathCounty-container" title="County of Death...">County of Death...</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                    <div class="form-group" style="text-align:right;">
+                                        <button onclick="cancelDeathSearch(); return false;" class="btn btn-default btn-sm">
+                                            <i class="fa fa-times"></i>&nbsp;Cancel
+                                        </button>
+                                        <button id="deathSearchButton" class="btn btn-primary btn-sm">
+                                            <i class="fa fa-search"></i>&nbsp;Search
+                                        </button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+    <div class="col-xs-12">
+        <div class="card card-white">
+            <div class="card-content">
+                <i class="fa fa-search fa-3x fa-pull-left text-primary" aria-hidden="true"></i>
+                <h3>Search Tips</h3>
+                <p>
+                    The State of Oklahoma began filing records in 1908, however it was not required by law until 1917.
+                </p>
+                <p>
+                    <strong>Births</strong> The earliest birth record on file 1865. Most birth records were not filed timely until 1950 after Social Security Act was implemented and WWII was underway. It was at that time that people began to need proof of legal name, age, citizenship, age and parentage to access government benefits.
+                </p>
+                <p>
+                    <strong>Deaths</strong> The earliest death record on file is 1908.
+                </p>
+                <p>
+                    <strong>Information searched</strong> Any information typed into the query will be included in the search. Only exact matches will be returned. We recommend starting broader and narrowing the search as you go. If you are not sure about a field, we recommend you start by leaving it blank.
+                </p>
+                <p>
+                    <strong>Wildcard searches</strong> An asterisk (*) may be used as a wildcard in any field. For example John* will return records like John, Johnson, and Johnston. Any blank field will be considered wildcard as well.
+                </p>
+                <p>
+                    <strong>Maximum Number of Records returned</strong> Any query that matches more than 15 possible records will return a message for you to narrow your search.  Beware: Searching on common names, large date ranges etc. are likely to return more than 15 records.
+                </p>
+                <p>
+                    <strong>Unknown Year of Event</strong> You can check a box to search in blocks of +/- 1, 2 or 5 years of a possible date.
+                </p>
+                <p>
+                    <strong>Errors in the Index</strong> Because the index was built over many many years, it does contain errors. These errors may be due to a doctor or funeral director making a mistake when filling out the record, the family not providing the correct information, our difficulty in reading the handwriting, typographical error, etc.
+                </p>
+                <p>
+                    <strong>Sealed records</strong> Original versions of records that were sealed upon adoption or after any change in parentage are not be available to be searched.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <div class="row">
+                    <div class="col-md-3 hidden-xs hidden-sm">
+                        <h1>
+                            <a href="/"><img src="/images/logo.png" class="img-responsive" alt="Ok 2 Explore"></a>
+                        </h1>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3">
+                        <h4 class="text-primary">Navigation</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/Home/Contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3">
+                        <h4 class="text-primary">Frequently Asked Questions</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" onclick="getBirthFAQ(); return false;">Birth</a></li>
+                            <li><a href="#" onclick="getDeathFAQ(); return false;">Death</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3">
+                        <h4 class="text-primary">Eligibility (non-open records)</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" onclick="openBirthEligibility(); return false;">Birth</a></li>
+                            <li><a href="#" onclick="openDeathEligibility(); return false;">Death</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bottom">
+            <div class="col-md-offset-1 col-md-10">
+                <div class="row">
+                    <div class="col-xs-12">
+                        © 2016 Oklahoma State Department of Health, Vital Records Division
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js">
+        </script>
+<script>(window.jQuery||document.write("\u003Cscript src=\u0022\/lib\/jquery\/dist\/jquery.min.js\u0022\u003E\u003C\/script\u003E"));</script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js">
+        </script>
+<script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal||document.write("\u003Cscript src=\u0022\/lib\/bootstrap\/dist\/js\/bootstrap.min.js\u0022\u003E\u003C\/script\u003E"));</script>
+        <script src="/lib/jquery.msg/jquery.center.min.js"></script>
+        <script src="/lib/jquery.msg/jquery.msg.min.js"></script>
+        <script src="/lib/footable/footable.min.js"></script>
+        <script src="/js/jquery.blockUI.js"></script>
+        <script src="/js/site.min.js?v=PrS_WVqqcp4MA7jD-4plzgM7B3ir3IlBG1zIALQAxYU"></script>
+    
+
+    
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-89564321-1', 'auto');
+          ga('send', 'pageview');
+
+    </script>
+    <script src="/lib/moment/min/moment-with-locales.min.js"></script>
+    <script src="/lib/select2/dist/js/select2.js"></script>
+    <script src="/lib/bootbox/bootbox.js"></script>
+    <!-- App Scripts -->
+    <script src="/app/deathAjax.js"></script>
+
+
+
+<div data-lastpass-root="" style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important;"><div data-lastpass-infield="true" style="position: absolute !important; top: 0px !important; left: 0px !important;"></div></div><style></style></body></html>
