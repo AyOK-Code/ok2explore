@@ -66,7 +66,7 @@ module Ok2explore
         bootbox = wait.until { driver.find_element(css: '.bootbox-body') }
         text = bootbox.attribute('innerHTML')
         if text.include?('We could not find any records')
-          raise Ok2Explore::Errors::NoResults, 'No results found.'
+          return []
         else 
           match = text.match(/\b(\d+)\b/)
           number = match[1].to_i
