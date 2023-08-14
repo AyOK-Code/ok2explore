@@ -61,17 +61,17 @@ module Ok2explore
 
       begin
         wait = Selenium::WebDriver::Wait.new(timeout: 10)
-        
+
         # Look for model indicating too many results
         bootbox = wait.until { driver.find_element(css: '.bootbox-body') }
         text = bootbox.attribute('innerHTML')
         if text.include?('We could not find any records')
-          return []
-        else 
+          []
+        else
           match = text.match(/\b(\d+)\b/)
           number = match[1].to_i
           raise Ok2explore::Errors::TooManyResults,
-              "#{number} results returned. Please narrow your search."
+                "#{number} results returned. Please narrow your search."
         end
       rescue Selenium::WebDriver::Error::TimeoutError
         wait.until { driver.find_element(:id, 'gvDeathResults') }
