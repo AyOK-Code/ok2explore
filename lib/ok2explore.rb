@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "ok2explore/version"
+require_relative 'ok2explore/version'
 require 'ok2explore/scraper'
 require 'ok2explore/errors'
 
