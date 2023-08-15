@@ -38,13 +38,13 @@ module Ok2explore
     end
 
     def set_chromedriver
-      options = Selenium::WebDriver::Chrome::Options.new
-      Selenium::WebDriver::Chrome.path = ENV['GOOGLE_CHROME_SHIM'] if ENV['GOOGLE_CHROME_SHIM']
-      Selenium::WebDriver::Chrome::Service.driver_path = ENV['CHROMEDRIVER_PATH'] if ENV['CHROMEDRIVER_PATH']
+      options = Selenium::WebDriver::Firefox::Options.new
+      Selenium::WebDriver::Firefox::Binary.path = ENV['FIREFOX_BIN'] if ENV['FIREFOX_BIN']
+      Selenium::WebDriver::Firefox::Service.driver_path = ENV['GECKODRIVER_PATH'] if ENV['GECKODRIVER_PATH']
       options.add_argument('--headless')
       options.add_argument('--no-sandbox')
       options.add_argument('--disable-dev-shm-usage')
-      Selenium::WebDriver.for(:chrome, options: options)
+      Selenium::WebDriver.for(:firefox, options: options)
     end
 
     def valid_params(keys)
