@@ -40,7 +40,7 @@ module Ok2explore
     def set_chromedriver
       options = Selenium::WebDriver::Chrome::Options.new
       Selenium::WebDriver::Chrome.path = ENV['GOOGLE_CHROME_SHIM'] if ENV['GOOGLE_CHROME_SHIM']
-      Selenium::WebDriver::Chrome.driver_path = ENV['CHROMEDRIVER_PATH'] if ENV['CHROMEDRIVER_PATH']
+      Selenium::WebDriver::Chrome::Service.driver_path = ENV['CHROMEDRIVER_PATH'] if ENV['CHROMEDRIVER_PATH']
       options.add_argument('--headless')
       options.add_argument('--no-sandbox')
       options.add_argument('--disable-dev-shm-usage')
