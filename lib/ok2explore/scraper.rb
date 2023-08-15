@@ -39,6 +39,7 @@ module Ok2explore
 
     def set_chromedriver
       options = Selenium::WebDriver::Firefox::Options.new
+      Selenium::WebDriver::Firefox.path = ENV['FIREFOX_BIN'] if ENV['FIREFOX_BIN']
       Selenium::WebDriver::Firefox::Service.driver_path = ENV['GECKODRIVER_PATH'] if ENV['GECKODRIVER_PATH']
       options.add_argument('--headless')
       options.add_argument('--no-sandbox')
